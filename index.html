@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Triguna Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Devicons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/2.14.0/css/devicons.min.css">
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+.open-to-work-badge {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border: 2px solid #FFDB58; /* Mustard yellow border */
+            border-radius: 25px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            overflow: hidden;
+        }
+        .open-to-work-badge::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, #FFDB58, transparent);
+            animation: slide 2s infinite;
+        }
+        .open-to-work-badge i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #FFDB58; /* Mustard yellow */
+        }
+        @keyframes slide {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+.icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .icon-container {
+            text-align: center;
+            padding: 20px;
+            width: 150px;
+        }
+        .icon-container i, .icon-container .devicon {
+            font-size: 40px;
+            color: #333; /* Default icon color */
+            transition: color 0.5s ease-in-out;
+        }
+        .icon-container:hover i, .icon-container:hover .devicon {
+            color: #FFDB58; /* Mustard yellow on hover */
+            animation: pulse 1s infinite;
+        }
+        .icon-container p {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+
+
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.quote {
+            font-size: 24px;
+            font-style: italic;
+            color: #333;
+            position: relative;
+            max-width: 600px;
+            text-align: center;
+        }
+        .quote::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, #FFDB58, transparent);
+            background-size: 200% 100%;
+            animation: slide 3s linear infinite;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        @keyframes slide {
+            0% {
+                background-position: 200% 0;
+            }
+            100% {
+                background-position: -200% 0;
+            }
+        }
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Triguna Cheruku</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+		
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+			
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+			
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image: url('images/bg.jpeg');">
+					
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Triguna Cheruku</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'BTech Graduate ',
+						'Passionate Learner  ',
+						'Technology Enthusiast   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+							<p></p><a href="https://github.com/trigunach" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+							
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+		
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<!-- <img src="images/me.jpg" class="img-fluid rounded b-shadow-a" alt=""> -->
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<!-- <div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										
+									  </div>
+									</div> -->
+								  </div>
+								  <div class="icons">
+									<div class="icon-container">
+										<i class="fas fa-robot"></i>
+										<p>Machine Learning</p>
+									</div>
+									<div class="icon-container">
+										<i class="fab fa-python"></i>
+										<p>Python</p>
+									</div>
+									<div class="icon-container">
+										<i class="fab fa-java"></i>
+										<p>Java</p>
+									</div>
+									<div class="icon-container">
+										<i class="fas fa-code"></i>
+										<p>Web Development</p>
+									</div>
+									<div class="icon-container">
+										<i class="fas fa-laptop-code"></i>
+										<p>Software Development</p>
+									</div>
+									<div class="icon-container">
+										<i class="fas fa-database"></i>
+										<p>Database</p>
+									</div>
+									<div class="icon-container">
+										<i class="fas fa-cogs"></i>
+										<p>API Development</p>
+									</div>
+									<!-- <div class="icon-container">
+										<i class="devicon-flask-original"></i>
+										<p>Flask</p>
+									</div>
+									<div class="icon-container">
+										<i class="devicon-git-plain"></i>
+										<p>Git</p>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Hey there! I’m a tech enthusiast with a knack for Python, Java, and C, diving 
+									deep into the world of software development. My experience spans from UWB
+									 Middleware at NXP Semiconductors to crafting smart, secure IoT solutions 
+									 and AI-driven projects. I’m quick to learn and love working in dynamic teams, 
+									 always ready to tackle challenges with innovative and efficient solutions. 
+									 Let’s collaborate and turn those ideas into cutting-edge digital creations!</p>
+								
+								<div class="skills-section">
+									<h2>Skills</h2>
+									
+									<div class="skills">
+										<strong>Languages:</strong>
+										<p>Python, Java, C, SQL</p>
+									</div>
+									
+									<div class="skills">
+										<strong>Frameworks:</strong>
+										<p>Flask, Django (basics)</p>
+									</div>
+									
+									<div class="skills">
+										<strong>Technical Skills:</strong>
+										<p>Data Structures, Networking, Operating Systems, Database Management Systems</p>
+									</div>
+									
+									<div class="skills">
+										<strong>Web Development:</strong>
+										<p>HTML, CSS, JavaScript, Angular (basics)</p>
+									</div>
+									
+									<div class="skills">
+										<strong>Technologies:</strong>
+										<p>Machine Learning, Deep Learning (with TensorFlow, Keras), Neural Networks, NLP</p>
+									</div>
+									
+									<div class="skills">
+										<strong>Tools & Platforms:</strong>
+										<p>GIT, Linux, Windows, VsCode, Tableau, Postman, MySQL</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+	<div class="row">
+		<h1 class="big-4">Achievements</h1>
+		<div class="underline"></div>
+	</div>
+	<br>
+	
+	<div class="row">
+		<div class="col-md-3">
+			<div class="resume-wrap ftco-animate">
+				<span class="date">May 2021-March 2023</span>
+						<h2>Women Engineers Cohort-3 Scholar</h2>
+						<span class="position">TalentSprint, Supported by Google</span>
+			</div>
+		</div>
+
+		<div class="col-md-3">
+			<div class="resume-wrap ftco-animate">
+			<span class="date">Jan 2021-Feb 2023</span>
+			<h2>Women In Software Engineering Scholar</h2>
+			<span class="position">TalentSprint</span>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="resume-wrap ftco-animate">
+				<span class="date">May 2023-July 2023</span>
+				<h2>Cisco Women in Cyber Security BOOST 3.0</h2>
+				<span class="position">Cisco</span>
+				</div>
+		</div>
+		<div class="col-md-3">
+			<div class="resume-wrap ftco-animate">
+				<span class="date">Sep 2023-Oct 2023</span>
+				<h2>Amazon Machine Learning Summer School 2023</h2>
+				<span class="position">Amazon</span>
+				</div>
+		</div>
+	</div>
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-12">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">July 2023-June 2024</span>
+						<h2>Student Intern</h2>
+						<span class="position">NXP Semiconductors</span>
+						<p class="mt-4">NXP Semiconductors is a global leader in secure connectivity solutions, providing a broad range of semiconductor products for automotive, industrial, and consumer electronics.
+							<ul>
+								<li>Worked in UWB Middleware Team whose primary focus is on enhancing precision, security, and efficiency across different IoT ecosystems, including smart homes, secure car access, and various industrial applications.</li>
+								<li>Integrated secure element for end-to-end security at the IC level and contributed to Automation.</li>
+								<li>Contributed to pipeline and packaging scripts using Groovy, Python, and Shell.</li>
+								<li>Enhanced codebase documentation with Doxygen.</li>
+								<li>Skills: UWB, C, Python, Git, Groovy, Shell Script, Tortoise Git, Jenkins, Bitbucket, Jira, Doxygen, Debugging.</li>
+												</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2024</span>
+    					<h2>Bachelor of Technology</h2>
+    					<span class="position">Shri Vishnu Engineering College For Women</span>
+    					<p class="mt-4">Grade: 9.1,First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2020</span>
+    					<h2>Intermediate</h2>
+    					<span class="position">Aditya Junior College</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1-8mhmw5pp8B7Xqr3k5nWuo1eXmFYN2gf/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/trigunach/mini_alexa" class="block-20 zoom-effect" style="background-image: url('images/download.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/trigunach/mini_alexa">Mini Alexa</a></h3>
+                <p>A model which performs several actions based on voice input.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/trigunach/Blood-Bank-And-Donor-Management-System" class="block-20 zoom-effect" style="background-image: url('images/blood.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/trigunach/Blood-Bank-And-Donor-Management-System">Blood Bank and Donor Management System</a></h3>
+                <p>Built a web-based application which enables individuals in search of blood to obtain information about blood donors in the city.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/trigunach/SMS-Spam-Detection" class="block-20 zoom-effect" style="background-image: url('images/spam.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/trigunach/SMS-Spam-Detection">SMS Spam Detection</a></h3>
+                <p>Identified various machine learning algorithms and compared
+					their performance to gain insight and determine which of these algorithms can filter SMS into SPAM and HAM with high
+					accuracy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/trigunach/Image-Captioning-Using-CNN-and-LSTM" class="block-20 zoom-effect" style="background-image: url('images/image_cap.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/trigunach/Image-Captioning-Using-CNN-and-LSTM">Image Captioning Using CNN and LSTM</a></h3>
+				  <p>Built a model to generate
+					contextual captions upon uploading an image.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-6 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://8179452667">+91-8179452667</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-6 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:triguna.ch.123@gmail.com">triguna.ch.123@gmail.com</a></p>
+	          </div>
+          </div>
+          
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/triguna-cheruku-4a3813214/"><span class="icon-linkedin"></span></a></li>  
+					  </ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
